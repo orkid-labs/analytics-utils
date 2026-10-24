@@ -1,10 +1,24 @@
 {
   "name": "@orkid-labs/analytics-utils",
   "version": "0.1.0",
-  "description": "Analytics utilities for Keen.io integration with UTM tracking and event collection",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "description": "Keen.io analytics utilities — UTM tracking, typed event collection, bot-aware telemetry",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
   "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,7 +26,12 @@
     "keen",
     "utm",
     "tracking",
-    "events"
+    "events",
+    "keen-io",
+    "utm-tracking",
+    "telemetry",
+    "typescript",
+    "orkid-labs"
   ],
   "author": "Orkid Labs",
   "license": "MIT",
@@ -20,7 +39,11 @@
     "type": "git",
     "url": "https://github.com/orkid-labs/analytics-utils.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "tsup": "^9.0.0",
+    "typescript": "^5.9.3"
   }
 }
