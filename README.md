@@ -43,3 +43,18 @@ const result = await executeKeenQuery({
 ## License
 
 MIT
+
+---
+
+## Part of Orkid Labs
+
+**analytics-utils** — Keen.io analytics utilities — UTM tracking, event collection, and bot-aware telemetry helpers.
+
+- Install: `npm install @orkid-labs/analytics-utils`
+- Package: https://www.npmjs.com/package/@orkid-labs/analytics-utils
+- API docs: https://docs.orkidlabs.xyz/packages/analytics-utils
+- Docs: https://docs.orkidlabs.xyz/packages/analytics-utils
+
+Related Orkid projects: [react-utils](https://github.com/orkid-labs/react-utils), [@orkid-labs/sdk](https://github.com/orkid-labs/sdk)
+
+Orkid Labs builds gasless, MEV-protected swap routing and agent-native DeFi infrastructure — [orkidlabs.xyz](https://orkidlabs.xyz) · [@orkid-labs on npm](https://www.npmjs.com/org/orkid-labs) · [github.com/orkid-labs](https://github.com/orkid-labs)
